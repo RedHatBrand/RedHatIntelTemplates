@@ -8,13 +8,13 @@ height: 297mm
   <head>
     <meta charset='utf-8'>
     <link href='http://red-hat-overpass-fonts.s3.amazonaws.com/overpass.css' rel='stylesheet' />
-    <link href='//redhatbrand.github.io/RedHatTemplates/assets/stylesheets/general/tile-pattern-fill.css' rel='stylesheet' />
-    <link href='<%= baseUrl %>//white-paper/assets/stylesheets/main.css' rel='stylesheet' />
+    <link href='//redhatbrand.github.io/RedHatTemplates/global-assets/stylesheets/general/tile-pattern-fill.css' rel='stylesheet' />
+    <link href='<%= baseUrl %>/templates/white-paper/assets/stylesheets/main.css' rel='stylesheet' />
 
     <style>
       #front-page .page-header {
         background-image: 
-          url('//redhatbrand.github.io/RedHatTemplates/assets/images/shapes/blue/grid-00-00.svg'),
+          url('//redhatbrand.github.io/RedHatTemplates/global-assets/images/shapes/blue/grid-00-00.svg'),
           url('{{{ background-image }}}');
 
         background-repeat: no-repeat;
@@ -25,7 +25,7 @@ height: 297mm
 
       #last-page .page-header {
         background-image: 
-          url('//redhatbrand.github.io/RedHatTemplates/assets/images/shapes/blue/grid-00-00.svg'),
+          url('//redhatbrand.github.io/RedHatTemplates/global-assets/images/shapes/blue/grid-00-00.svg'),
           url('{{{ background-image }}}');
 
         background-repeat: no-repeat;
@@ -34,20 +34,13 @@ height: 297mm
         background-position: top left, center center;
       }
 
-      blockquote:before, blockquote:after {
-        display: none;           
+      #content {
+        -adobe-flow-into: pageflow; 
+        flow-into: pageflow;
       }
-
-      blockquote *:first-child:before {
-        content: '"';
-        font-size: 1.25em;
-        line-height: 1em;
-      }
-
-      blockquote *:last-child:after {
-        content: '"';
-        font-size: 1.25em;
-        line-height: 1em;
+      .page-content { 
+        -adobe-flow-from: pageflow;
+        flow-from: pageflow;
       }
     </style>
   </head>
@@ -101,7 +94,7 @@ height: 297mm
                 <img src="<%= baseUrl %>/assets/images/logos/rh-logo.svg" alt="Red Hat" />
               </div>
               <div class="intel">
-                <img src="<%= baseUrl %>/assets/images/logos/partners/intel/intel-reverse.svg" alt="intel" />
+                <img src="<%= baseUrl %>/assets/images/logos/intel-logo-white.svg" alt="intel" />
               </div>
             </div>
           </div>
@@ -161,9 +154,13 @@ height: 297mm
                     {{ customer-representative-quote }}
                   </blockquote>
                   <cite>
-                    <p><strong>{{ customer-representative-name }}</strong></p>
-                    <p>{{ customer-representative-title }}</p>
-                    <p>{{ customer }}</p>
+                    <strong>{{ customer-representative-name }}</strong><br/>
+                    <small>
+                      <p>
+                        {{ customer-representative-title }}<br/>
+                        {{ customer }}
+                      </p>
+                    </small>
                   </cite>
                 </div>
               </div>
@@ -205,7 +202,7 @@ height: 297mm
                 <img src="<%= baseUrl %>/assets/images/logos/rh-logo-black.svg" alt="Red Hat" />
               </div>
               <div class="intel">
-                <img src="<%= baseUrl %>/assets/images/logos/partners/intel/intel-standard.svg" alt="intel" />
+                <img src="<%= baseUrl %>/assets/images/logos/intel-logo.svg" alt="intel" />
               </div>
             </div>
           </div>
@@ -244,7 +241,7 @@ height: 297mm
                 <img src="<%= baseUrl %>/assets/images/logos/rh-logo-black.svg" alt="Red Hat" />
               </div>
               <div class="intel">
-                <img src="<%= baseUrl %>/assets/images/logos/partners/intel/intel-standard.svg" alt="intel" />
+                <img src="<%= baseUrl %>/assets/images/logos/intel-logo.svg" alt="intel" />
               </div>
             </div>
           </div>
@@ -317,7 +314,7 @@ height: 297mm
                 <img src="<%= baseUrl %>/assets/images/logos/rh-logo.svg" alt="Red Hat" />
               </div>
               <div class="intel">
-                <img src="<%= baseUrl %>/assets/images/logos/partners/intel/intel-reverse.svg" alt="intel" />
+                <img src="<%= baseUrl %>/assets/images/logos/intel-logo-white.svg" alt="intel" />
               </div>
             </div>
           </div>
@@ -386,11 +383,11 @@ height: 297mm
       <!-- /Design here -->
     </main>
 
-    <script src="<%= baseUrl %>//white-paper/assets/javascripts/cssregions.js"></script>
+    <script src="<%= baseUrl %>/templates/white-paper/assets/javascripts/cssregions.js"></script>
     <script type="text/javascript" charset="utf-8">
       var redhatBrandPattern = 'partners';
     </script>
-    <script src="<%=baseUrl%>/assets/javascripts/tile-pattern.js"></script>
+    <script src="//redhatbrand.github.io/RedHatTemplates/global-assets/javascripts/tile-pattern.js"></script>
     <script src='<%=baseUrl%>/assets/javascripts/vendor/jquery.js'></script>
     <script src='<%=baseUrl%>/assets/javascripts/vendor/leaflet.js'></script>
     <script src='<%=baseUrl%>/assets/javascripts/vendor/d3.v3.min.js'></script>
