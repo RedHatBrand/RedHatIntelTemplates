@@ -12,6 +12,10 @@ height: 90px
  
     <style>
       body {
+        position: relative;
+        margin: 0;
+      }
+      main {
         background-image: 
           url('{{{ background-image }}}');
 
@@ -19,6 +23,13 @@ height: 90px
         background-blend-mode: multiply;
         background-size: cover;
         background-position: center center;
+        overflow: hidden;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
       }
     </style>
   </head>
