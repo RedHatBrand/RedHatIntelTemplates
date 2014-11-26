@@ -1,0 +1,31 @@
+{
+  "title": "HTML Email Newsletter",
+  "data": {
+    "brand-color-primary": "#c00",
+    "headline-image": "email-header-headline.jpg",
+    "headline": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "introduction": "Hey {name}!",
+    "introduction-content": "<p>Bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci.</p>",
+    "section1-title": "Blurbs",
+    "section1-content": "<p>Bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci.</p>",
+    "section1-icon": "http://placehold.it/100x100",
+    "call-to-action": "Find Out More",
+    "call-to-action-url": "http://www.redhat.com/en",
+    "section2-title": "Two Columns",
+    "section2-left-content": "<p>Bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci.</p>",
+    "section2-right-content": "<p>Bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci.</p>",
+    "section2-left-icon": "http://placehold.it/100x100",
+    "section2-right-icon": "http://placehold.it/100x100",
+    "section3-title": "Three Columns",
+    "section3-left-content": "<p>Bibendum non venenatis nisl tempor.</p>",
+    "section3-middle-content": "<p>Bibendum non venenatis nisl tempor.</p>",
+    "section3-right-content": "<p>Bibendum non venenatis nisl tempor.</p>",
+    "section3-left-icon": "http://placehold.it/100x100",
+    "section3-middle-icon": "http://placehold.it/100x100",
+    "section3-right-icon": "http://placehold.it/100x100",
+    "facebook_url": "http://facebook.com/mybusiness",
+    "twitter_url": "http://twitter.com/mybusiness",
+    "linkedin_url": "http://linkedin.com/mybusiness",
+    "unsubscribe": "You are receiving this email because lorem ipsum dolor sit amet. Click <a href=''>here</a> to unsubscribe."
+  }
+}
