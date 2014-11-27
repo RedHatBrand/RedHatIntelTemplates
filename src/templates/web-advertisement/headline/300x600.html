@@ -13,6 +13,10 @@ height: 600px
  
     <style>
       body {
+        position: relative;
+        margin: 0;
+      }
+      main {
         background-image: 
           url('//redhatbrand.github.io/RedHatTemplates/global-assets/images/shapes/red/grid-00-00.svg'),
           url('//redhatbrand.github.io/RedHatTemplates/global-assets/images/shapes/blue/grid-12-12.svg'),
@@ -22,6 +26,13 @@ height: 600px
         background-blend-mode: multiply;
         background-size: 120% auto, 120% auto, cover;
         background-position: top left, bottom right, center center;
+        overflow: hidden;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
       }
     </style>
   </head>
