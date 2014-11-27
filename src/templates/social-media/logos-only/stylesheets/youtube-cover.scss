@@ -6,12 +6,9 @@ body { font-size: 48pt; }
   
   &.center { 
     width: 101%;
-    left: -0.25em; 
   }
   
   &.bottom {
-    bottom: -0.3em;
-    right: 0.1em;
     .pattern-stripe { left: 38.5%; }
   }
 }
